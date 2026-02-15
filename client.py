@@ -1,3 +1,4 @@
+# import OpenAAI
 from openai import OpenAI
  
 # pip install openai 
@@ -13,5 +14,6 @@ completion = client.chat.completions.create(
     {"role": "user", "content": "what is coding"}
   ]
 )
+
 
 print(completion.choices[0].message.content)
